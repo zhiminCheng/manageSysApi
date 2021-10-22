@@ -1,0 +1,10 @@
+const express = require('express');
+const home = express.Router();
+home.get('/',(req,res) => {
+    let data = {
+        test:'123'
+    }
+    res.send(data);
+});
+
+module.exports = home;
